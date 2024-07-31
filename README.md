@@ -4,4 +4,21 @@ ISHA(Intelligent System for Hyper Accelerated Learning) empowers learners by org
 ## Features
 List of features offered by the solution
 
-Course Integration and Organization Progress Tracking Topic Management Learning Pattern Analysis Recommendation System for related content Reminder System Notification System Chatbot for Instant Doubt Solving MCQ and Subjective Quiz System Plagiarism Evalution System for Quiz
+- Course Integration and Organization
+- Progress Tracking
+- Topic Management
+- Learning Pattern Analysis
+- Recommendation System for related content
+- Reminder System
+- Notification System
+- Chatbot for Instant Doubt Solving
+- MCQ and Subjective Quiz System
+- Plagiarism Evalution System for Quiz
+
+
+## Preview : 
+
+![isha](https://github.com/user-attachments/assets/4a2a2947-2a92-46dc-b819-540dc154b61a)
+
+
+
