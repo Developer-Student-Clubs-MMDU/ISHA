@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSocket Test</title>
+  </head>
+  <body>
+    <h1>WebSocket Test</h1>
+    <div id="output"></div>
+    <script>
+      const socket = new WebSocket("ws://localhost:3000");
+
+      socket.onopen = () => {
+        document.getElementById("output").innerText = "WebSocket connected";
+        socket.send(JSON.stringify({ event: "getProgress" }));
+      };
+
+      socket.onmessage = (event) => {
+        document.getElementById(
+          "output"
+        ).innerText += `\nMessage from server: ${event.data}`;
+      };
+
+      socket.onerror = (error) => {
+        document.getElementById(
+          "output"
+        ).innerText += `\nWebSocket error: ${error.message}`;
+        console.error("WebSocket error:", error);
+      };
+
+      socket.onclose = (event) => {
+        document.getElementById(
+          "output"
+        ).innerText += `\nWebSocket connection closed: ${event.code}`;
+        console.log("WebSocket connection closed", event);
+      };
+    </script>
+  </body>
+</html>
